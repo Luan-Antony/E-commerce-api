@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  devemdobro-pg:
+    image: postgres:15
+    container_name: devemdobro-pg
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: devemdobro_db
+    ports:
+      - "5432:5432"

@@ -1,0 +1,24 @@
+{
+  "name": "e-commerce-api-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npx tsx watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "prettier": "3.5.3",
+    "prisma": "^6.10.0",
+    "tsx": "^4.20.3"
+  },
+  "dependencies": {
+    "@prisma/client": "6.10.0",
+    "express": "^5.1.0",
+    "zod": "^3.25.67"
+  }
+}
