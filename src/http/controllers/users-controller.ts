@@ -53,7 +53,7 @@ export class UsersController {
 
             if (user && bcrypt.compareSync(password, user.passwordHash)) {
                 const token = jwt.sign({ id: user.id, email: user.email }, "mysecretkey", { expiresIn: '1h' })
-                response.json({ token })
+                response.json({ token, user })
                 return
             }
 

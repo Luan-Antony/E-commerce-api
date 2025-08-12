@@ -5,8 +5,8 @@ services:
     image: postgres:15
     container_name: devemdobro-pg
     environment:
-      POSTGRES_USER: docker
-      POSTGRES_PASSWORD: docker
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: elefante
       POSTGRES_DB: devemdobro_db
     ports:
       - "5432:5432"
